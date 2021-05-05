@@ -1,0 +1,24 @@
+public class RunnableTest {
+
+    public static void main(String[] args) {
+
+        System.out.println("=== RunnableTest ===");
+        // Anonymous Runnable
+        Runnable r1 = new Runnable() {
+
+            //переопределяем SAM одиночный абстрактный метод
+            @Override
+            public void run() {
+                System.out.println("Hello world one!");
+            }
+        };
+
+        // Lambda Runnable то же самое что и переопределение SAM
+        Runnable r2 = () -> System.out.println("Hello world two!");
+
+        // Run em!
+        r1.run();
+        r2.run();
+
+    }
+}
