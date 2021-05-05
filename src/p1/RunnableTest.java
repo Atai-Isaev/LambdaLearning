@@ -1,4 +1,4 @@
-package Comparator;
+package p1;
 
 public class RunnableTest {
   public static void main(String[] args) {
